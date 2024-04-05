@@ -4,7 +4,7 @@ import java.util.Scanner
 fun main() {
 
 
-  /*  println("\n")
+    println("\n")
 
     // Task 1
 
@@ -115,7 +115,7 @@ fun main() {
     for ((index, item) in inchArray.withIndex()) {
 
         println("${inchArray[index]} -> ${cmArray[index]}")
-    } */
+    }
 
 
     println("\n")
@@ -190,14 +190,16 @@ fun main() {
 
     println("Updated getSetarray: ${getSetarray.contentToString()}")
 
+
     println("\n")
 
     // Task 8
 
-    val differentItemarray = arrayOf(-1, "Baku", -3.18, 81, 7,false)
+
+    val differentItemarray = arrayOf(-1, "New-York", -3.18, 81, 7,false)
     println("differentItemarray: ${differentItemarray.contentToString()}")
 
-    val find = differentItemarray.find { it == "Baku" }
+    val find = differentItemarray.find { it == "New-York" }
     println("Find: ${find}")
 
     val filter = differentItemarray.filter { it == -3.18 }
@@ -207,6 +209,8 @@ fun main() {
         print("${index}) ${element}  ")
     }
 
+
+    println("\n")
 }
 
 
