@@ -4,7 +4,6 @@ import java.util.Scanner
 fun main() {
 
 
-    println("\n")
 
     // Task 1
 
