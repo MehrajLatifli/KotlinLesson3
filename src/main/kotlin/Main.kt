@@ -4,9 +4,10 @@ import java.util.Scanner
 fun main() {
 
 
-    println("\n")
+  /*  println("\n")
 
     // Task 1
+
 
     var array1 = arrayOf<Int>(10, 2, 22, 21, 53, 5)
 
@@ -43,6 +44,7 @@ fun main() {
 
     // Task 2
 
+
     var scanner = Scanner(System.`in`)
 
     var inputArray = arrayOf("", "", "", "")
@@ -62,6 +64,7 @@ fun main() {
     println("\n")
 
     // Task 3
+
 
     var inputDoubleArray = arrayOf<Double>(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
 
@@ -85,11 +88,10 @@ fun main() {
     println("Average*2 = "+(sum / inputDoubleArray.count()) * 2)
 
 
-
-
     println("\n")
 
     // Task 4
+
 
     var inchArray = arrayOf<Double>(0.0, 0.0, 0.0, 0.0, 0.0)
     var cmArray = arrayOf<Double>(0.0, 0.0, 0.0, 0.0, 0.0)
@@ -113,9 +115,98 @@ fun main() {
     for ((index, item) in inchArray.withIndex()) {
 
         println("${inchArray[index]} -> ${cmArray[index]}")
-    }
+    } */
 
 
+    println("\n")
+
+    // Task 5
+
+
+    var stringArray = arrayOf("BMW","KIA","Opel","Volvo","Ford","Hyundai","Honda","Nissan")
+
+    println(stringArray.contains("Nissan"))
+    println(stringArray.indexOf("Nissan"))
+    println(stringArray.contentToString())
+    println(stringArray.isEmpty())
+    println(stringArray.first())
+    println(stringArray.last())
+    println(stringArray.count())
+
+    stringArray+="New car"
+    println(stringArray.contentToString())
+
+
+    println("\n")
+
+    // Task 6
+
+
+    val intArray = arrayOf<Int>(11, 1, 10, -55, -5, -2, 0, 2)
+
+    println(intArray.max())
+    println(intArray.min())
+
+    println("\n")
+
+    for (i in intArray) {
+        print("${i} ")
     }
+
+    intArray.reverse()
+    println("\n")
+
+    for (i in intArray) {
+        print("${i} ")
+    }
+
+    intArray.sort()
+    println("\n")
+
+    for (i in intArray) {
+        print("${i} ")
+    }
+
+    println("\n\nAverage ${intArray.average()}")
+
+
+    println("\n")
+
+    // Task 7
+
+
+    val getSetarray = arrayOf(10, "Baku", -30.45, 45, 18,"Ankara")
+
+    println("getSetarray: ${getSetarray.contentToString()}")
+
+    val element1 = getSetarray.get(1)
+    val element2 = getSetarray.get(2)
+
+    println("Element at index=${getSetarray.indexOf(element1)}: $element1")
+    println("Element at index=${getSetarray.indexOf(element2)}: $element2")
+
+    getSetarray.set(getSetarray.indexOf(element1), "Tabriz")
+    getSetarray.set(getSetarray.indexOf(element2), 4305)
+
+    println("Updated getSetarray: ${getSetarray.contentToString()}")
+
+    println("\n")
+
+    // Task 8
+
+    val differentItemarray = arrayOf(-1, "Baku", -3.18, 81, 7,false)
+    println("differentItemarray: ${differentItemarray.contentToString()}")
+
+    val find = differentItemarray.find { it == "Baku" }
+    println("Find: ${find}")
+
+    val filter = differentItemarray.filter { it == -3.18 }
+    println("Filter: ${filter}")
+
+    differentItemarray.forEachIndexed { index, element ->
+        print("${index}) ${element}  ")
+    }
+
+}
 
 
