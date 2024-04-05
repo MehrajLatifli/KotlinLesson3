@@ -188,6 +188,7 @@ fun main() {
     getSetarray.set(getSetarray.indexOf(element1), "Tabriz")
     getSetarray.set(getSetarray.indexOf(element2), 4305)
 
+
     println("Updated getSetarray: ${getSetarray.contentToString()}")
 
 
